@@ -1,0 +1,207 @@
+/************************************************************************
+ **                             TAG SELECTORS                          **
+ ************************************************************************/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+p{
+    text-align: center;
+    color: #8f8f8f;
+    margin-bottom: 30px;
+}
+
+
+ /************************************************************************
+ **                             CLASS SELECTORS                        **
+ ************************************************************************/
+.container-fluid{
+    padding: 3% 10%;
+}
+
+/* Navigation Bar */
+
+.navbar{    
+    padding: 0  0 4.5rem 0;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+/* Download button */
+.download-button{
+    margin: 5% 3% 7% 0;
+}
+
+/* Title Image */
+.top-sect{
+    padding-top: 10px;
+}
+
+.title-image{
+    width: 60%;
+    transform: rotate(25deg);
+    margin-left: 10%;
+    position: absolute;
+    /* top: 100px; */
+}
+
+/* Feature */
+
+
+.feature-image{
+    color: #ef8172;
+    margin-bottom: 15px;
+}
+
+.feature-image:hover{
+    color: #ff4c68;
+}
+
+.feature-col{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container-fluid{
+    padding: 2% 15% 7%;
+}
+
+/* Testimonials */
+.testi-img{
+    border-radius: 100%;
+    width: 10%;
+    margin: 20px;
+}
+
+.logo-img{
+    width: 15%;
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* Pricing */
+.card-header{
+    /* padding: 7px 0 2px 0; */
+    background-color: hsl(7, 93%, 89%);
+}
+
+/* Call for Action */
+.cta-quote{
+    color: white;
+    font-size: 3rem;
+}
+/* Footer */
+.copyright{
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.social{
+    margin: 0 10px 10px 0;
+}
+
+.social:hover{
+    color: #ff4c68;
+}
+
+.bot-download-button{
+    margin: 5%;
+}
+ /************************************************************************
+  **                              ID SELECTORS                          **
+  ************************************************************************/
+#title{
+    background-color: #ff4c68;
+    color: white;
+}
+
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+#press{
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+#pricing{
+    text-align: center;
+}
+
+#cta{
+    padding: 10% 0 0;
+    background-color: #ff4c68;
+    color: white;
+    text-align: center;
+}
+
+#footer{
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#features{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+}
+
+/* **************************** */
+@media (max-width: 1028px){
+    .nav-item{
+        text-align: right;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+        margin-left: 0;
+        /* padding: auto; */
+    }
+
+    #title{
+        text-align: center;
+    }
+}
