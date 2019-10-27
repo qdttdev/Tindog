@@ -1,207 +1,206 @@
 /************************************************************************
  **                             TAG SELECTORS                          **
  ************************************************************************/
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-}
-
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    font-weight: 900;
-}
-
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 900;
-}
-
-h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin: 0;
-}
-
-p{
     text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
     color: #8f8f8f;
     margin-bottom: 30px;
 }
 
 
- /************************************************************************
+/************************************************************************
  **                             CLASS SELECTORS                        **
  ************************************************************************/
-.container-fluid{
-    padding: 3% 10%;
+.container-fluid {
+    padding: 2% 15%;
+}
+
+.h1-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.color-section {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section {
+    background-color: white
 }
 
 /* Navigation Bar */
 
-.navbar{    
-    padding: 0  0 4.5rem 0;
+.navbar {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 0 4.5rem 0;
 }
 
-.navbar-brand{
-    font-family: 'Ubuntu', sans-serif;
+.navbar-brand {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.nav-item{
+.nav-item {
     padding: 0 18px;
 }
 
-.nav-link{
-    font-family: 'Ubuntu', sans-serif;
+.nav-link {
     font-size: 1.2rem;
     font-weight: lighter;
 }
 
 /* Download button */
-.download-button{
+.download-button {
     margin: 5% 3% 7% 0;
 }
 
 /* Title Image */
-.top-sect{
-    padding-top: 10px;
-}
 
-.title-image{
+.title-image {
     width: 60%;
     transform: rotate(25deg);
     margin-left: 10%;
     position: absolute;
-    /* top: 100px; */
 }
 
 /* Feature */
 
+.feature-text,
+.pricing-type-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0;
+}
 
-.feature-image{
+.feature-image {
     color: #ef8172;
     margin-bottom: 15px;
 }
 
-.feature-image:hover{
+.feature-image:hover {
     color: #ff4c68;
 }
 
-.feature-col{
-    text-align: center;
+.feature-col {
     margin: 20px 0;
 }
 
-.container-fluid{
-    padding: 2% 15% 7%;
-}
 
 /* Testimonials */
-.testi-img{
+.pricing-intro,
+.testi-text,
+.pricing-price-text,
+.cta-quote {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.testi-img {
     border-radius: 100%;
     width: 10%;
     margin: 20px;
 }
 
-.logo-img{
+.logo-img {
     width: 15%;
     margin: 20px;
 }
 
-.carousel-item{
+.carousel-item {
     padding: 7% 15%;
 }
 
 /* Pricing */
-.card-header{
-    /* padding: 7px 0 2px 0; */
+
+.white-section .container-fluid {
+    padding: 7% 15%;
+}
+
+.card-header {
     background-color: hsl(7, 93%, 89%);
 }
 
 /* Call for Action */
-.cta-quote{
-    color: white;
-    font-size: 3rem;
+
+.color-section#cta {
+    padding-top: 5%;
 }
+
 /* Footer */
-.copyright{
+
+#footer .container-fluid {
+    padding: 2% 15%;
+}
+
+.copyright {
     font-size: 0.8rem;
     margin: 0;
 }
 
-.social{
+.social {
     margin: 0 10px 10px 0;
 }
 
-.social:hover{
+.social:hover {
     color: #ff4c68;
 }
 
-.bot-download-button{
+.bot-download-button {
     margin: 5%;
 }
- /************************************************************************
-  **                              ID SELECTORS                          **
-  ************************************************************************/
-#title{
-    background-color: #ff4c68;
-    color: white;
+
+/************************************************************************
+ **                              ID SELECTORS                          **
+ ************************************************************************/
+#title .container-fluid {
+    text-align: left;
+    padding-top: 3%;
 }
 
-#testimonials{
-    text-align: center;
+#testimonials,
+#press {
     background-color: #ef8172;
-    color: white;
 }
 
-#press{
-    text-align: center;
-    background-color: #ef8172;
-    color: white;
-}
-
-#pricing{
-    text-align: center;
-}
-
-#cta{
-    padding: 10% 0 0;
-    background-color: #ff4c68;
-    color: white;
-    text-align: center;
-}
-
-#footer{
-    background-color: white;
+#footer {
     padding-top: 10px;
-    text-align: center;
 }
 
-#features{
-    padding: 7% 15%;
-    background-color: white;
+#features {
     position: relative;
 }
 
-/* **************************** */
-@media (max-width: 1028px){
-    .nav-item{
+/************************************************************************
+ **                              MEDIA QUERY                           **
+ ************************************************************************/
+@media (max-width: 1028px) {
+    .row {
+        text-align: center;
+    }
+
+    .nav-item {
         text-align: right;
     }
 
-    .title-image{
+    .title-image {
         position: static;
         transform: rotate(0deg);
         margin-left: 0;
-        /* padding: auto; */
-    }
-
-    #title{
-        text-align: center;
     }
 }
